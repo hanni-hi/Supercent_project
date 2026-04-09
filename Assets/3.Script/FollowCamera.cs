@@ -9,7 +9,7 @@ public class FollowCamera : MonoBehaviour
 
 
 
-    void Start()
+    void LateUpdate()
     {
         transform.position = Character.transform.position + offset;
         transform.LookAt(Character.transform);        
